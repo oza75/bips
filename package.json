@@ -19,6 +19,15 @@
     "Feature",
     "user interest"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oza75/bips.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oza75/bips/issues",
+    "email": "abouba181@gmail.com"
+  },
+  "homepage": "https://github.com/oza75/bips#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
