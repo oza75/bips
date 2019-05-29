@@ -1,12 +1,13 @@
 {
-  "name": "bips",
+  "name": "bip-tour",
   "version": "1.0.0",
   "description": "Attract user interest on your new feature with bips",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --host=0.0.0.0 --mode=development",
-    "prod": "webpack --mode=production"
+    "prod": "webpack --mode=production",
+    "prepublishOnly": "npm run prod"
   },
   "author": "Aboubacar Ouattara (OZA)",
   "license": "MIT",
