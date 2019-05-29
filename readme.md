@@ -1,5 +1,5 @@
 #### Attract your user interest with Bip-Tour
-<div style="text-algin: center;"> <img src="./src/docs/ezgif-1-b8fa1a694791.gif" width="200"/> </div>
+<div style="text-algin: center;"> <img src="./src/docs/ezgif-1-b8fa1a694791.gif" /> </div>
 
 ## Installation 
 ```bash
