@@ -1,5 +1,5 @@
-### Attract your user interest with Bip-Tour
-![Bip Tour Example](./src/docs/ezgif-1-b8fa1a694791.gif)
+#### Attract your user interest with Bip-Tour
+<div style="text-algin: center;"> <img src="./src/docs/ezgif-1-b8fa1a694791.gif" width="200"/> </div>
 
 ## Installation 
 ```bash
@@ -92,8 +92,7 @@
 
 ---
 - remove : Remove a dot
-### Example
- #### Example 
+#### Example 
  ```js
     let bip = new Bip(300, 100, 'red', {html: "Hello i'm a new feature"})
     bip.show() // show it
