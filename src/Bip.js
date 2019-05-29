@@ -41,6 +41,11 @@ class Bip {
     }
 
     show() {
+        if (this.elems.wrapper) {
+            this.elems.wrapper.style.display = 'block';
+            return;
+        }
+
         let body = document.getElementsByTagName("body")[0];
         body.appendChild(this.html())
     }
@@ -97,8 +102,8 @@ class Bip {
         messageElem.setAttribute('id', 'bip-message-' + this._message_id);
         messageElem.classList.add('message');
         messageElem.innerHTML = this._message.html;
-        messageElem.style.left = this._x  + 'px';
-        messageElem.style.top = this._y - parent.scrollHeight - 10 +  'px';
+        messageElem.style.left = this._x + 'px';
+        messageElem.style.top = this._y - parent.scrollHeight - 10 + 'px';
         messageElem.style.position = 'fixed';
         messageElem.style.backgroundColor = this._message.bgColor || this._color || 'blue';
         messageElem.style.color = this._message.color || 'white';
@@ -115,6 +120,15 @@ class Bip {
         document.getElementById(id).remove();
         this.elems.dot.style.backgroundColor = this._color;
         this.elems.ringing.style.animation = 'pulsate 1s ease-out infinite';
+    }
+
+    hide() {
+        this.elems.wrapper.style.display = "none";
+    }
+
+    remove () {
+        this.elems.wrapper.remove();
+        this.elems = {};
     }
 }
 
