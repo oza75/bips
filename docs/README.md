@@ -1,5 +1,8 @@
-#### Attract your user interest with Bip-Tour
+[js-bip-tour](README.md) › [Globals](globals.md)
 
+# js-bip-tour
+
+#### Attract your user interest with Bip-Tour
 
 ## Installation
 - Via UNPKG
@@ -37,13 +40,11 @@
     tour.play(); // start the tour
 ```
 
-
 ## Api
 - Constructor
     - *options* : Tour options
         - *nextButton*: Next Button Text. By defaut `Next`;
         - *prevButton*: Previous Button Text. By defaut `Previous`;
-
 
    #### Example
 ```js
