@@ -1,6 +1,6 @@
 {
   "name": "js-bip-tour",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Attract user interest on your new feature with bips",
   "main": "lib/index.js",
   "types": "@types",

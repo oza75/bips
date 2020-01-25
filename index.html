@@ -6,19 +6,37 @@
   <style>
     .container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       min-height: 100vh;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 0 400px;
     }
   </style>
 </head>
 <body>
-<h1>Hello</h1>
 <div class="container">
+  <div id="second-step">Second Step</div>
   <div class="new-feature" id="hello-feature">Hello</div>
+  <div id="docs-step">Documentation</div>
 </div>
-<script type="text/javascript" src="dist/index.js"></script>
-<!--<script type="text/javascript" src="dist/tourItem.js"></script>-->
-<script src="index.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-bip-tour@latest/dist/index.js"></script>
+<script type="text/javascript">
+  let tour = new Tour();
+  tour.add({selector: "#hello-feature", title: "Hello world", description: "Welcome to js-bip-tour"});
+  tour.add({
+    selector: "#second-step",
+    color: "red",
+    title: "Bip Tour",
+    description: "Attract your user interest on your new feature"
+  });
+  tour.add({
+    selector: "#docs-step",
+    title: "Our documentation",
+    description: "See our documentation : <a href='https://github.com/oza75/bips#readme'>https://github.com/oza75/bips#readme</a>"
+  });
+  tour.play();
+</script>
 </body>
 </html>
